@@ -3,7 +3,7 @@
 
 from os import scandir
 from os.path import abspath
-from configuration import dirTypeFile, formatFiles, PAHT
+from Configuration import dirTypeFile, formatFiles, PAHT
 
 
 
@@ -45,7 +45,6 @@ def readFilesWithFormat():
     try:
         arrayFiles = lsFull(PAHT)
         dictFileCarpet = getDictFileCarpet(arrayFiles)
-        print(dictFileCarpet)
         return dictFileCarpet
 
     except FileNotFoundError:
